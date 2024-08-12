@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wachira Wahome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="">
+        <nav class="bg-white fixed top-0 w-full h-auto z-50 shadow-2xl border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-10">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="/images/logo.png" class="h-12 w-12" alt="Logo" />
+                </a>
+                <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button" class="flex text-md bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-14 h-14 rounded-full" src="images/MAU_0026.JPG" alt="user">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Wachira Wahome</span>
+                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">wachirawahome81@gmail.com</span>
+                        </div>
+                        <ul class="py-2" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Work</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                    <ul class="flex flex-col font-semibold p-6 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#home" class="block py-2 px-3 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contacts" class="block py-2 px-3 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="flex pt-20 bg-gray-900">
+        <div class="container mx-auto p-6 text-center">
+            <p class="text-2xl text-white">Holla</p> <br>
+            <span class="text-4xl text-[#f0f8ff] font-semibold">Joseph Wachira</span>
+            <span class="block text-xl text-gray-300 mt-2">Tech Enthusiast</span>
+
+            <div class="flex h-[400px] overflow-clip items-center rounded-tl-full rounded-br-full justify-center w-96 shadow-xl mx-auto">
+                 <img class="w-[100%] h-[100%]" src="images/MAU_0026.JPG" alt="user">
+                 <!-- Overlay Effect
+                  <div class="absolute inset-1 bg-black bg-opacity-40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <p class="text-[#f0f8ff] text-xl font-semibold text-center">Joseph Wachira</p>
+                  </div> -->
+            </div>
+
+            <div class="flex flex-row items-center justify-center space-x-3 mt-6">
+              <a href="/docs/Gray and White Simple Clean Resume.pdf"><button class="items-center justify-center border-2 border-[#f0f8ff] text-[#f0f8ff] bg-transparent hover:bg-blue-700 hover:text-gray-900 font-semibold py-2 px-4 rounded-xl shadow-md">
+                  <span class="transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 text">Download Resume</span>
+              </a></button>
+              <button id="contacts" class="border-2 border-[#f0f8ff] text-[#f0f8ff] bg-transparent hover:bg-blue-700 hover:text-gray-900 font-semibold py-2 px-4 rounded-xl shadow-md">
+                  <span class="transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500">Contact Me</span>
+                  <!-- <i class="bx bx-send text-2xl absolute top-[50%] left-[50%] transform -translate-x-1/2 translate-y-[100%] opacity-0 hover:opacity-100 hover:translate-y-0 transition-all duration-500"></i> -->
+              </button>
+            </div> 
+            
+            <ul class="outline-none flex flex-row items-center justify-center space-x-6 mt-12">
+              <a href="https://github.com/WahomeJoseph" class="rounded-2xl bg-transparent"><i class='bx bxl-github bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <a href="www.linkedin.com/in/joseph-wachira-202a7023" class="rounded-2xl bg-transparent"><i class='bx bxl-linkedin bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <a href="https://mail.google.com/mail/" class="rounded-2xl bg-transparent"><i class='bx bx-envelope bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              <a href="https://www.instagram.com/sayjo.e?igsh=YzljYTk1ODg3Zg==" class="rounded-2xl bg-transparent"><i class='bx bxl-instagram bx-tada text-4xl' style='color:#ffffff'></i></a>
+              <a href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09" class="rounded-2xl bg-transparent"><i class='bx bxl-twitter bx-tada text-4xl' style='color:#ffffff' ></i></a>
+              
+            </ul>
+        </div>
+    </section>
+     
+    <!-- Skills Section -->
+     <section id="skills" class="flex py-20 bg-gray-900">
+      <div class="container mx-auto items-center justify-center px-10 py-8">
+      <h2 class="text-2xl font-semibold text-[#f0f8ff] text-center hover:underline hover:text-blue-700">Skills</h2>
+        <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+          <div class="flex flex-col border-t-2 border-blue-700 px-8 py-4 space-y-4 shadow-2xl rounded-t-lg">
+            <h3 class="text-2xl text-center text-blue-700">Frontend</h3>
+            <i class='bx bxl-react text-center text-4xl text-blue-700' style='color: blue-700'></i>
+            <span class="text-[#f0f8ff] text-justify">Proficient in HTML, CSS, Tailwind CSS JavaScript, and React; experienced in building responsive, user-friendly interfaces.
+                 Strong attention to detail and a passion for delivering high-quality web applications.</span>
+          </div>
+
+          <div class="flex flex-col border-t-2 border-blue-700 px-8 py-4 space-y-4 shadow-2xl rounded-t-lg">
+            <h3 class="text-2xl text-center text-blue-700">UI/UX</h3>
+            <i class='bx bxl-figma text-center text-4xl text-blue-700' style='color: blue-700'></i>
+            <span class="text-[#f0f8ff] text-justify">Experienced in UI/UX design; skilled in creating intuitive, user-centered interfaces with Figma, Canva and Adobe XD. 
+                Strong focus on usability, aesthetics, and user satisfaction.</span>
+          </div>
+
+          <div class="flex flex-col border-t-2 border-blue-700 px-8 py-4 space-y-4 shadow-2xl rounded-t-lg">
+            <h3 class="text-2xl text-center text-blue-700">Backend</h3>
+            <i class='bx bxl-nodejs text-center text-4xl text-blue-700' style='color: blue-700'></i>
+            <span class="text-[#f0f8ff] text-justify">Proficient in backend development using MERN stack Node.js, Express, and MongoDB; experienced in building robust, scalable APIs 
+                and database management with a focus on security and performance.</span>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- Work section -->
+     <section id="work" class="flex py-12 bg-gray-900">
+        <div class="container mx-auto px-8 py-6 space-y-2 items-center justify-center bg-gray-900">
+            <h2 class="text-center text-[#f0f8ff] text-2xl hover:underline hover:text-blue-700">My Works</h2>
+            <div class="grid grid-cols-3 gap-10">
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">AUTOBIOGRAPHY</h3>
+                    <p>Explore, who is Joseph?</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+                    <span class="text-justify text-[#f0f8ff]">Kikuyu</span>
+
+                   <a href="/docs/Who is Joseph Wachira.pdf" class="w-full" download="Autobiography"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Doc</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">AUTOBIOGRAPHY</h3>
+                    <p>Explore, who is Joseph?</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+
+                   <a href="/docs/Who is Wachira.pptx" class="w-full" download="Autobiography Presentation"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download PPT</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">AUTOBIOGRAPHY</h3>
+                    <p>Explore, who is Joseph?</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+                    <span class="text-justify text-[#f0f8ff]">Kikuyu</span>
+
+                    <a href="/docs/Who is Joseph Wachira.pdf" class="w-full" download="Autobiography Presentation"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Doc</button></a>
+                </div>
+                <!-- Innovation and Innovation -->
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">INNOVATION & INVENTION</h3>
+                    <p>Explore, modern,genius world!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+                    <span class="text-justify text-[#f0f8ff]">Kikuyu</span>
+
+                    <a href="/docs/Wearables Inn.pdf" class="w-full" download="Innovation & Invention"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Doc</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">INNOVATION & INVENTION</h3>
+                    <p>Explore, modern,genius world!.</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+
+                    <a href="/docs/Wearables.pptx" class="w-full" download="Innovation & Invention Presentation"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download PPT</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <h3 class="text-blue-700">INNOVATION & INVENTION</h3>
+                    <iframe class="w-full h-auto rounded-md" src="https://www.youtube.com/embed/WULsv7PU89c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Explore, modern, genius world!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                </div>
+                
+                <!-- African Aspects -->
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">ASPECT OF AFRICAN CULTURE</h3>
+                    <p>Explore, what Africa has to offer!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+                    <span class="text-justify text-[#f0f8ff]">Kikuyu</span>
+
+                    <a href="/docs/Medicine Inn.pdf" class="w-full" download="African Medicine"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Doc</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">ASPECT OF AFRICAN CULTURE</h3>
+                    <p>Explore, what Africa has to offer!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+                    <span class="text-justify text-[#f0f8ff]">Kikuyu</span>
+
+                    <a href="/docs/Medicine.pptx" class="w-full" download="African Medicine Presentation"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download PPT</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <h3 class="text-blue-700">ASPECT OF AFRICAN CULTURE</h3>
+                    <iframe class="w-full h-auto rounded-md" src="https://www.youtube.com/embed/_O6aXaN8P3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Explore, what Africa has to offer!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                </div>
+                
+                <!-- Modern World Challenges -->
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">MODERN WORLD CHALLENGES</h3>
+                    <p>Explore, new era challenges!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+
+                    <a href="/docs/Challenges.pdf" class="w-full" download="Modern Challenges"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Doc</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">MODERN WORLD CHALLENGES</h3>
+                    <p>Explore, new era challenges!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+
+                    <a href="/docs/Challenges.pdf" class="w-full" download="Modern Challenges"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download PPT</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <h3 class="text-blue-700">MODERN WORLD CHALLENGES</h3>
+                    <iframe class="w-full h-auto rounded-md" src="https://www.youtube.com/embed/FgOs9JyuAyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Explore, new era challenges!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                </div>
+                
+                <!-- Cruial African Culture -->
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">CRUCIAL AFRICAN ASPECT</h3>
+                    <p>Explore, Arica's preserved aspet!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+
+                    <a href="/docs/Kikuyu Activities.pdf" class="w-full" download="Cultural Practice"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Doc</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">CRUCIAL AFRICAN ASPECT</h3>
+                    <p>Explore, Arica's preserved aspet!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+
+                    <a href="docs/Kikuyu Activities.pdf" class="w-full" download="Cultural Practice"><button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download PPT</button></a>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2 py-2 px-4 rounded-md border-t-2 border-blue-700 shadow-2xl">
+                    <img src="" alt="Resume">
+                    <h3 class="text-blue-700">CRUCIAL AFRICAN ASPECT</h3>
+                    <p>Explore, Arica's preserved aspet!</p>
+                    <span class="text-justify text-[#f0f8ff]">English</span>
+                    <span class="text-justify text-[#f0f8ff]">Kiswahili</span>
+
+                    <button class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:text-gray-900 transition duration-500">Download Video</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Contact Section -->
+    
+      <section id="contacts" class="bg-gray-900">
+        <h2 class="text-3xl text-center text-[#f0f8ff] hover:underline hover:text-blue-700 ">Let's Talk</h2>
+        <p class="text-center text-xl text-[#f0f8ff]">Reach out to discuss exciting projects, innovative ideas, or simply connect. <br> Let's create something amazing together!</p>
+        <div class="grid grid-cols-2 gap-6 mx-8 px-6 space-y-4"> 
+            <form action="#" class="max-w-2xl bg-transparent mx-auto my-12 bg-[#f0f8ff] p-6 border-t-2 border-blue-700 rounded-2xl shadow-2xl">
+                <div class="grid grid-cols-2 gap-4 ">
+                    <div class="mb-6  space-y-2">
+                        <label for="name" class="text-xl text-blue-700">Full Name:</label>
+                        <input type="text" placeholder="eg. John Kim" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                    </div>
+                    <div class="mb-6  space-y-2">
+                        <label for="name" class="text-xl text-blue-700">Email:</label>
+                        <input type="email" placeholder="eg. johnkim@gmail.com" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                    </div>
+                    <div class="mb-6  space-y-2">
+                        <label for="name" class="text-xl text-blue-700">Phone:</label>
+                        <input type="phone" placeholder="eg. 07123456789" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                    </div>
+                    <div class="mb-6  space-y-2">
+                        <label for="project" class="text-xl text-blue-700">Project:</label>
+                        <input type="text" placeholder="eg. e-commerce" autocomplete="off" class="w-full px-4 py-2 border-b border-blue-700 text-[#f0f8ff] rounded-md bg-gray-800 shadow-2xl">
+                    </div>
+                </div>
+                <div class="mb-6  space-y-2">
+                    <label for="message" class="text-xl text-blue-700">Message:</label>
+                    <textarea name="message" id="message" autocomplete="off" class="w-full px-4 py-2 text-[#f0f8ff] bg-gray-800 border-b border-blue-700 rounded-md"></textarea>
+                </div>
+                <div class="mb-6  space-y-2">
+                    <button type="submit" class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold py-3 rounded-md hover:bg-blue-700 hover:border-bg-red-700 transition duration-500">Send</button>
+                </div>
+            </form>     
+            
+            <div class="items-center justify-center space-y-4">
+                <h2 class="text-center justify-center text-2xl text-[#f0f8ff]">About Information</h2>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex flex-col items-center justify-center leading-relaxed space-y-2 p-6 border-t-2 border-blue-700 rounded-t-lg shadow-2xl">
+                        <span class="text-center text-blue-700 font-semibold">Email me</span>
+                        <p class="text-center text-[#f0f8ff]">Email me for inquiries, marketing, business, and partnership opportunities.</p>
+                        <a href="mailto: josephwachira589@gmail.com"><span class="text-center text-[#f0f8ff] hover:text-blue-700">josephwachira589@gmail.com</span></a>
+                        <a href="mailto: wachirawahome@gmail.com"><span class="text-center text-[#f0f8ff] hover:text-blue-700">wachirawahome81@gmail.com</span></a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center leading-relaxed space-y-2 p-6 border-t-2 border-blue-700 rounded-t-lg shadow-2xl">
+                        <span class="text-center text-blue-700 font-semibold">Call me</span>
+                        <p class="text-center text-[#f0f8ff]">Call me for inquiries, marketing, business, and partnership opportunities.</p>
+                        <a href="tel: +254795969757"><i class='bx bx-phone text-blue-700 px-2 text-xl'></i><span class="text-center text-[#f0f8ff] hover:text-blue-700">0795969757</span></a>
+                        <a href="tel: +254700402570"><i class='bx bx-phone text-blue-700 px-2 text-xl'></i><span class="text-center text-[#f0f8ff] hover:text-blue-700">0795969757</span></a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center leading-relaxed space-y-2 p-6 border-t-2 border-blue-700 rounded-t-lg shadow-2xl">
+                        <span class="text-center text-blue-700 font-semibold">Address</span>
+                        <p class="text-center text-[#f0f8ff]">Contact me for inquiries, marketing, business, and partnership opportunities.</p>
+                        <a href="#"><i class='bx bxs-map-pin bx-tada text-blue-700 px-2 text-xl'></i><span class="text-center text-[#f0f8ff] hover:text-blue-700">Nyeri</span></a>
+                        <a href="#"><i class='bx bxs-map-pin bx-tada text-blue-700 px-2 text-xl'></i><span class="text-center text-[#f0f8ff] hover:text-blue-700">Remote</span></a>
+                    </div>
+                    <div class="flex flex-col items-center justify-center leading-relaxed space-y-2 p-6 border-t-2 border-blue-700 rounded-t-lg shadow-2xl">
+                        <span class="text-center text-blue-700 font-semibold">Support</span>
+                        <p class="text-center text-[#f0f8ff]">Contact me for inquiries, marketing, business, and partnership opportunities.</p>
+                        <button type="submit" class="w-full text-center text-xl border border-blue-700 bg-transparent text-[#f0f8ff] font-semibold p-2 rounded-md hover:bg-blue-700 hover:border-bg-red-700 transition duration-500">Support</button>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>            
+        </div>
+        <!-- Footer -->
+        <div class="border-t-2 border-blue-700 mt-12 mx-16"></div>
+        <div class="flex flex-col">
+            <div class="flex flex-row items-center justify-center space-x-4 mt-4">
+                <a href="https://github.com/WahomeJoseph" class="rounded-2xl bg-transparent"><i class='bx bxl-github text-3xl' style='color:#ffffff' ></i></a>
+                <a href="www.linkedin.com/in/joseph-wachira-202a7023" class="rounded-2xl bg-transparent"><i class='bx bxl-linkedin text-3xl' style='color: #f0f8ff' ></i></a>
+                <a href="https://mail.google.com/mail/" class="rounded-2xl bg-transparent"><i class='bx bx-envelope text-3xl' style='color: #f0f8ff' ></i></a>
+                <a href="https://www.instagram.com/sayjo.e?igsh=YzljYTk1ODg3Zg==" class="rounded-2xl bg-transparent"><i class='bx bxl-instagram text-3xl' style='color: #f0f8ff'></i></a>
+                <a href="https://x.com/WachiraJoseph17?t=KGERM4FElIAFfhTfLpCMyw&s=09" class="rounded-2xl bg-transparent"><i class='bx bxl-twitter text-3xl' style='color: #f0f8ff' ></i></a>
+            </div>
+            <div class="flex flex-row items-center justify-evenly space-x-2 p-6 mx-12">
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">Terms of Service</span></a>
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">Privacy Policy</span></a>
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">FAQ</span></a>
+                <a href="#"><span class="text-xl font-semibold text-gray-500 hover:text-[#f0f8ff]">Help Center</span></a>
+            </div>
+            <div class="mt-2 mb-4 text-center text-gray-500">
+                &copy; 2024 WahomeWachira. All rights reserved.
+            </div>
+      </section>
+</body>
+</html>
